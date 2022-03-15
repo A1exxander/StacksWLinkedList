@@ -120,13 +120,12 @@ public:
     
         Node* current{ m_head };
         while (current != nullptr || current->data != data) {           
-            current = current->nextNode;
-        }
+            current = current->nextNode;        
         if (current != nullptr && current->data == data)
             return true;
         else
             return false; // If we cannot find the desire data;
-
+        }
     }
 
     bool isEmpty() const {
